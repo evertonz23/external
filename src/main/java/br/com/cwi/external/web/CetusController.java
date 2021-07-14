@@ -24,7 +24,7 @@ public class CetusController {
     }
 
     private BigDecimal calculatePrice(ShippingRequest request) {
-        return BigDecimal.valueOf(request.getVolume() * 2 + 3);
+        return BigDecimal.valueOf(request.getVolume() * 2L + 3L);
     }
 
     private int calculateTime(@RequestBody ShippingRequest request) {
